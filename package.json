@@ -1,0 +1,28 @@
+{
+  "name": "rosspalmer",
+  "version": "2.0.0",
+  "description": "Personal website",
+  "author": "Ross Palmer",
+  "license": "ISC",
+  "main": "index.html",
+  "scripts": {
+    "scss": "node-sass scss/ -o css/",
+    "scss-watch": "node-sass --watch scss/ -o css/",
+    "prefix": "postcss css/styles.css --use autoprefixer -d css/ --no-map",
+    "minify": "uglifycss css/styles.css > css/styles.min.css",
+    "build-css": "npm run scss && npm run prefix && npm run minify",
+    "build-html": "inline-source index.html index.out.html",
+    "build": "npm run build-css && npm run build-html && sh buildfile"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.1.1",
+    "inline-source-cli": "^1.2.0",
+    "node-sass": "^4.9.3",
+    "postcss-cli": "^6.0.0",
+    "uglifycss": "^0.0.29"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rjpr/portfolio"
+  }
+}

@@ -1,0 +1,19 @@
+// Tablets, iPad
+@media screen and (max-width: 768px) {
+  @include sidebar--md();
+  @include main--md();
+}
+
+
+// Low res tablets and landscape mobile
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  @include projects--sm();
+}
+
+
+// Mobile phones
+@media screen and (max-width: 480px) {
+  @include sidebar--xsm();
+  @include main--xsm();
+  @include projects--xsm();
+}
