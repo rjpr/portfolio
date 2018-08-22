@@ -6,7 +6,7 @@
   "license": "ISC",
   "main": "index.html",
   "scripts": {
-    "scss": "node-sass scss/ -o css/",
+    "scss": "mkdir -p css/ && node-sass scss/ -o css/",
     "scss-watch": "node-sass --watch scss/ -o css/",
     "prefix": "postcss css/styles.css --use autoprefixer -d css/ --no-map",
     "minify": "uglifycss css/styles.css > css/styles.min.css",
