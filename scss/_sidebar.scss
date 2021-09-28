@@ -9,7 +9,9 @@
     width: $sidebar-width;
     max-width: $sidebar-max-width;
     height: 100%;
-    background-color: $purple;
+    background: $purple;
+    background: linear-gradient(300deg, rgba(29,29,61,1) 0%, rgba(46,46,107,1) 69%, rgba(54,54,158,1) 100%);
+
     box-shadow: 4px 4px 20px 0 rgba(0,0,0,.2);
     white-space: nowrap;
     transition: max-width 0.5s ease;
@@ -20,7 +22,7 @@
         height: auto;
         max-width: 175px;
         border-radius: 50%;
-        margin: 20px auto 30px;
+        margin: 30px auto;
     }
 
     &__link {  
@@ -31,16 +33,16 @@
         align-items: center;
         justify-content: space-between;
 
-        // Bounce animation courtesy of https://ianlunn.github.io/Hover/
+        // Animation courtesy of https://ianlunn.github.io/Hover/
         transform: perspective(1px) translateZ(0);
         position: relative;
         transition-property: color;
-        transition-duration: 0.25s;
+        transition-duration: 0.5s;
 
         &:hover, &:active, &:focus {
             &:before{
                 transform: scaleX(1);
-                transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);    
+                // transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); // Bounce
             }
         }
 
@@ -52,11 +54,11 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: $purple--light;
+            background-color: rgba(255, 255, 255, 0.1);
             transform: scaleX(0);
             transform-origin: 0 50%;
             transition-property: transform;
-            transition-duration: 0.5s;
+            transition-duration: 0.3s;
             transition-timing-function: ease-out;
         }
 

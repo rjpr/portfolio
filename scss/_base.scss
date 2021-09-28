@@ -18,10 +18,16 @@ body {
       margin-bottom: 0.2em;
   }
 
-  span {
+  h2 {
       font-size: 1.85em;
       font-weight: bold;
-  }    
+      margin: 0;
+  }
+}
+
+h3 {
+  font-size: 1.55em;
+  margin-bottom: 2em;
 }
 
 .summary {
@@ -29,15 +35,25 @@ body {
   margin-top: 1em;
 }
 
+.footer {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 0.8em;
+}
+
 
 @mixin main--md() {
   .main {
     margin-left: $sidebar-max-width--sm;
-    padding: 0 30px;
+    padding: 0 30px 15px;
   }
 }
 
 @mixin main--xsm() {
+
+  h3 {
+    margin-bottom: 0;
+  }
 
   .main {
     margin-left: 0;

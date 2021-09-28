@@ -1,24 +1,20 @@
 .projects {
     margin-top: 4.2em;
-
-    h2 {
-        font-size: 1.55em;
-        margin-bottom: 2em;
-    }
-
     .project {
         display: flex;
+        flex-direction: row;
         margin-bottom: 3em;
 
         &__title {
             width: 100%;
             color: $black;
             font-weight: bold;
-            font-size: 1.4em;
+            font-size: 1.3em;
             margin-bottom: 0.3em;
+            margin-top: 0;
 
             a {
-                display: flex;
+                display: inline-flex;
                 align-items: center;
                 text-decoration: none;
                 color: $black;
@@ -29,7 +25,6 @@
                 }
             }
 
-
             .link-icon {
                 margin-left: 0.5em;
                 width: 0.8em;
@@ -38,27 +33,31 @@
 
         &__image {
             margin-right: 2em;
-
-            img {
-                max-width: 200px;
-                border-radius: 2px;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
-                &:hover {
-                    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-                }
-
-            }
-
         }
 
+        &--right {
+            @extend .project;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            &__image {
+                margin-left: 2em;
+            }
+        }
+    }
+
+    &--grid {
+        @extend .projects;
+        margin-top: 0;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 2em;
     }
 }
 
 @mixin projects--sm() {
     .projects {
-
         h2 {
             margin-bottom: 1.5em;
         }
@@ -67,38 +66,49 @@
             &__title {
                 font-size: 3.5vw;
             }
-    }
+        }
+
+        &--grid {
+            grid-template-columns: 1fr;
+        }
     }
 }
 
-@mixin projects--xsm() {
+@mixin projects--xsm() {    
     .projects {
         margin-top: 2.5em;
 
-        h2 {
-            margin-bottom: 0;
-        }
-
         .project {
-            flex-direction: column;
-            margin-bottom: 0;
+            @include project-xsm();
 
-            &__title {
-                font-size: 7vw;
-                margin-top: 1em;
+            &--right {
+                @include project-xsm();
             }
-
-            &__image {
-                align-self: center;
-                margin: 0;
-                margin-top: 3em;
-
-                img {
-                    max-width: 70vw;
-                }
-            }
-    
         }
 
+        &--grid {
+            grid-template-columns: 1fr;
+            gap: 2.5em 0;
+        }
+    }
+}
+
+@mixin project-xsm() {
+    flex-direction: column;
+    margin-bottom: 0;
+
+    &__title {
+        font-size: 7vw;
+    }
+
+    &__image {
+        align-self: center;
+        margin: 0;
+        margin-top: 3em;
+        margin-bottom: 1em;
+
+        img {
+            max-width: 70vw;
+        }
     }
 }
