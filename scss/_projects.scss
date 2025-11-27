@@ -28,6 +28,10 @@
             .link-icon {
                 margin-left: 0.5em;
                 width: 0.8em;
+
+                &:hover {
+                    fill: $purple--light;
+                }
             }
         }
 
