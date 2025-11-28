@@ -1,13 +1,9 @@
-// Variables
-@import 'variables';
-
 // Base
-@import 'base';
+@use 'body';
+@use 'main';
 
 // Components
-@import 'badge';
-@import 'projects';
-@import 'sidebar';
+@use 'footer';
 
 // Mobile
-@import 'media-queries';
+@use 'media-queries';
