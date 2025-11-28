@@ -1,0 +1,22 @@
+@use 'variables';
+
+@mixin prefixed($property, $value) {
+  @if variables.$webkit == true {
+    -webkit-#{$property}: #{$value};
+  }
+
+  @if variables.$moz == true {
+    -moz-#{$property}: #{$value};
+  }
+
+  @if variables.$ms == true {
+    -ms-#{$property}: #{$value};
+  }
+
+  @if variables.$o == true {
+    -o-#{$property}: #{$value};
+  }
+
+  #{$property}: #{$value};
+}
+  

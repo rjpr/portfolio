@@ -4,201 +4,79 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#29295d">
+  
   <title>Ross Palmer - Software Developer</title>
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="icon" href="favicon.ico">
-  <link inline rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">
-  <!-- This was planned to be used as async but Firefox does not support it -->
-  <!-- <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Montserrat:400,600" onload="this.rel='stylesheet'"> -->
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link inline rel="stylesheet" href="css/styles.css" type="text/css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">
+  </noscript>
 </head>
 
 <body>
 
-  <div class="sidebar">
-    <img src="img/portrait.png" class="sidebar__avatar" />
-    <a class="sidebar__link" href="https://www.linkedin.com/in/ross-palmer-8621bb128/">
-      <span>LinkedIn</span>
-      <img inline src="svg/linkedin.svg" />
-    </a>
-    <a class="sidebar__link" href="https://github.com/rjpr">
-      <span>GitHub</span>
-      <img inline src="svg/github.svg" />
-    </a>
-    <a class="sidebar__link" href="mailto:rossp@lmer.me">
-      <span>Contact</span>
-      <img inline src="svg/mail.svg" />
-    </a>
-  </div>
-
   <div class="main">
 
-    <div class="title">
-      <h1>Hi, I'm Ross Palmer.</h1>
-      <h2>A full stack developer based near Houston, TX.</h2>
-    </div>
+    <header class="title">
+      <h1>Hey, I'm Ross.</h1>
+      <h2>I'm a full-stack software developer based in Texas.</h2>
+    </header>
 
-    <div class="summary">
-      I'm currently developing APIs in <b>.NET</b>, microservices in <b>Go</b> or <b>.NET Core</b>, and hybrid apps in <b>Vue</b> using <b>Quasar</b>.
-    </div>
+    <section class="main__text">
+      <p>I work at <b><a href="https://aegis-hedging.com/" target="_blank">AEGIS Hedging Solutions <img inline class="link-icon" src="svg/external-link.svg" /></a></b>, specializing in platform infrastructure and building AI-powered document analysis tools using Angular and .NET.</p>
+      
+      <p>On the side, I like to take on challenging consulting projects. Some recent work I've done for clients includes:</p>
 
-    <div class="projects">
-      <h3>Here's where I'm working at the moment.</h3>
+      <ul>
+        <li>Kiosk app development in Vue.js</li>
+        <li>POS integrations (Micros, Infrasys) in .NET</li>
+        <li>Legacy COM port printer & barcode scanner integrations</li>
+        <li>Authentication & identity infrastructure (PingFederate, IdentityServer)</li>
+        <li>Oilfield rig data collection to the cloud for Power BI integration</li>
+        <li>Payment platform integrations (Ingenico, Stripe, FreedomPay)</li>
+      </ul>
 
-      <div class="project--right">
-        <a href="https://seatzapp.com/" target="_blank" class="project--right__image">
-          <img class="image--main" src="./img/seatz-sm.png" />
-        </a>
-        <div class="project__summary">
-          <h4 class="project__title">
-            Lead Developer at <a href="https://seatzapp.com/" target="_blank">sEATz <img inline class="link-icon" src="svg/external-link.svg" /></a>
-          </h4>
-          <div class="badge">.NET</div>
-          <div class="badge">Azure</div>
-          <div class="badge">Vue</div>
-          <div class="badge">Quasar</div>
-          <div class="badge">MSSQL</div>
-          <div class="badge">Redis</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac. Pellentesque massa placerat duis ultricies lacus.
-          </p>
-        </div>
-      </div>
+      <p>I'm also building a serverless SaaS product in Go designed for massive horizontal scaling.</p>
 
-    </div>
+      <p>If you have an interesting problem to solve, let's talk.</p>
+    </section>
 
-    <div class="projects">
-      <h3>Here's an ongoing project to be released "soon".</h3>
-
-      <div class="project">
-        <div class="project__image">
-          <img class="image" src="./img/domains-sm.png" />
-        </div>
-        <div class="project__summary">
-          <!-- <h4 class="project__title">
-          </h4> -->
-          <div class="badge">Go</div>
-          <div class="badge">.NET Core</div>
-          <div class="badge">AWS</div>
-          <div class="badge">Angular</div>
-          <div class="badge">MongoDB</div>
-          <div class="badge">Redis</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac. Pellentesque massa placerat duis ultricies lacus.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="projects">
-      <h3>And here's a few other things I've done.</h3>
-
-      <div class="project--right">
-        <a href="https://notifytraffic.com/" target="_blank" class="project--right__image">
-          <img class="image--link" src="./img/notifytraffic.png" />
-        </a>
-        <div class="project__summary">
-          <h4 class="project__title">
-            <a href="https://notifytraffic.com/" target="_blank">NotifyTraffic.com <img inline class="link-icon" src="svg/external-link.svg" /></a>
-          </h4>
-          <div class="badge">Python</div>
-          <div class="badge">Flask</div>
-          <div class="badge">MySQL</div>
-          <div class="badge">SCSS</div>
-          <p>
-            Originally built as a CLI project for myself, this ended up with a Flask powered front-end, international support, timezone support, and subscription levels powered by Stripe.
-          </p>
-          <p>
-            Uses a combination of different Google Maps API data to calculate current travel time which is then compared with historical travel times, which, if significantly above average, triggers an instant notification.
-          </p>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project__image">
-          <img class="image" src="./img/crypto-sm.png" />
-        </div>
-        <div class="project__summary">
-          <h4 class="project__title">
-            Crypto Auto-DCA Bot
-          </h4>
-          <div class="badge">Go</div>
-          <div class="badge">SQLite</div>
-          <p>
-            Highly configurable, yet simple CLI utility to automatically buy desired crypto at regular intervals. Either by placing an immediate market order, or by placing a limit order at a calculated "ideal" price.
-          </p>
-          <p>
-            Purchases multiple cryptos by weighting relative market caps. Auto-deposits cash from linked fiat account. Logs all transactions to a SQLite db which can be queried to produce regular reports.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="projects--grid">
-      <!-- <h3>And here's a few small projects.</h3> -->
-
-      <div class="project">
-        <div class="project__summary">
-          <h4 class="project__title">
-            Consulting
-          </h4>
-          <!-- <div class="badge">Various</div> -->
-          <p>
-            I primarily enjoy taking on consulting projects with a strictly defined scope and set of deliverables.
-            This allows me to take a break from my longer-form projects and attain a sense of satisfaction by providing a finished product that will have an immediate impact.
-          </p>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project__summary">
-          <h4 class="project__title">
-            <a href="https://github.com/rjpr/portfolio/" target="_blank">This Website <img inline class="link-icon" src="svg/external-link.svg" /></a>
-          </h4>
-          <div class="badge">SCSS</div>
-          <p>
-            I thoroughly enjoy the challenge of making highly performant sites, so I decided on a bare-bones approach using no JavaScript and no frameworks.
-            This site consists of a single HTML page and a handful of SCSS. NPM is used to compile & prefix the HTML & SCSS.
-          </p>
-        </div>
-      </div>
-
-      <div class="project">
-        <!-- <a href="https://github.com/rjpr/SendToTransmission/" target="_blank" class="project__image">
-          <img class="image--link" src="./img/sendtotransmission.png" />
-        </a> -->
-        <div class="project__summary">
-          <h4 class="project__title">
-            <a href="https://github.com/rjpr/SendToTransmission/" target="_blank">SendToTransmission <img inline class="link-icon" src="svg/external-link.svg" /></a>
-          </h4>
-          <div class="badge">JavaScript</div>
-          <div class="badge">CSS</div>
-          <p>
-            A super lightweight (25kB packaged) Chrome extension that adds a context menu item to send the selected link to Transmission.
-          </p>
-          <p>
-            20x smaller & less resource intensive than comparable extensions.
-          </p>
-        </div>
-      </div>
-
-      <!-- <div class="project">
-        <div class="project__summary">
-          <h4 class="project__title">
-            <a href="https://annettepalmerart.com/" target="_blank">Annette Palmer Art <img inline class="link-icon" src="svg/external-link.svg" /></a>
-          </h4>
-          <div class="badge">WordPress</div>
-          <p>A clean & minimal gallery WordPress website for a local artist.</p>
-        </div>
-      </div> -->
-
-    </div>
-
-    <!-- TODO: autogen the date when building -->
     <footer class="footer">
-      Last updated: 2021-09-27
+      <div class="footer__item">
+        <a class="footer__link" target="_blank" href="https://www.linkedin.com/in/ross-palmer-8621bb128/">
+          <img inline src="svg/linkedin.svg" />
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__item">
+        <a class="footer__link" target="_blank" href="https://github.com/rjpr">
+          <img inline src="svg/github.svg" />
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__item">
+        <a class="footer__link" href="mailto:rossp@lmer.me">
+          <img inline src="svg/mail.svg" />
+          <span>Contact</span>
+        </a>  
+      </div>
     </footer>
 
   </div>

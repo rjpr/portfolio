@@ -1,0 +1,96 @@
+@use 'options';
+
+.main {
+  margin-top: 3em;
+  transition: 0.4s ease all;
+  width: 60vw;
+
+  &__text {
+    font-size: 1.2em;
+    margin: 3em 0;
+  
+    p {
+      margin-bottom: 2em;
+    }
+
+    ul {
+      margin-bottom: 2em;
+
+      li {
+        margin-bottom: 0.4em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  
+    a {
+      text-decoration: none;
+      color: options.$font;
+      transition: 0.3s ease all;
+    
+      &:hover {
+          color: options.$hover-color;
+      }
+    }
+  }
+  
+}
+
+.title {
+  h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+  }
+
+  h2 {
+      font-size: 1.85em;
+      font-weight: bold;
+      margin: 0;
+  }
+}
+
+.link-icon {
+  height: 1em;
+
+  &:hover {
+      color: options.$hover-color;
+  }
+}
+
+@mixin main--md() {
+  .main {
+    margin-top: 2em;
+    width: 75vw;
+  }
+}
+
+@mixin main--sm() {
+  .main {
+    margin-top: 1em;
+    width: 80vw;
+  }
+}
+
+@mixin main--xsm() {
+  .main {
+    margin-top: 1em;
+    width: 85vw;
+
+    &__text {
+      margin: 2em 0;
+    }
+  }
+
+  .title {
+    h1 {
+      margin-bottom: 0.5em;
+      font-size: 2.25em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+}

@@ -1,19 +1,19 @@
+@use 'main';
+@use 'footer';
+
 // Tablets, iPad
 @media screen and (max-width: 768px) {
-  @include sidebar--md();
-  @include main--md();
+  @include main.main--md();
 }
-
 
 // Low res tablets and landscape mobile
 @media screen and (min-width: 481px) and (max-width: 767px) {
-  @include projects--sm();
+  @include main.main--sm();
+  @include footer.footer--vertical();
 }
-
 
 // Mobile phones
 @media screen and (max-width: 480px) {
-  @include sidebar--xsm();
-  @include main--xsm();
-  @include projects--xsm();
+  @include main.main--xsm();
+  @include footer.footer--vertical();
 }

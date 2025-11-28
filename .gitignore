@@ -2,5 +2,6 @@ node_modules/
 build/
 css/
 
+.DS_Store
 tracking.js
 package-lock.json
